@@ -241,6 +241,8 @@ public:
     // BBS
     void                update_objects_list_filament_column(size_t filaments_count);
     void                update_objects_list_filament_column_when_delete_filament(size_t filament_id, size_t filaments_count, int replace_filament_id = -1);
+    // Layer-range rows show the extruder from their config; refresh them after the filament list changed.
+    void                refresh_layer_range_filament_items();
     void                update_filament_colors();
     // show/hide "Extruder" column for Objects List
     void                set_filament_column_hidden(const bool hide) const;

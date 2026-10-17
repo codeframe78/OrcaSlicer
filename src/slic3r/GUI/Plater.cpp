@@ -21476,6 +21476,7 @@ void Plater::on_filaments_delete(size_t num_filaments, size_t filament_id, int r
 
     // update UI — runs after remap so update_mixed_filament_list() won't clip remapped extruder IDs
     sidebar().on_filaments_delete(filament_id);
+    sidebar().obj_list()->refresh_layer_range_filament_items();
 
     // update customize gcode
     for (auto item = p->model.plates_custom_gcodes.begin(); item != p->model.plates_custom_gcodes.end(); ++item) {
