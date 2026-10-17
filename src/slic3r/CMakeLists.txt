@@ -527,6 +527,8 @@ set(SLIC3R_GUI_SOURCES
     GUI/SelectMachinePop.hpp
     GUI/SendMultiMachinePage.cpp
     GUI/SendMultiMachinePage.hpp
+    GUI/SemanticPaintDialog.cpp
+    GUI/SemanticPaintDialog.hpp
     GUI/SendSystemInfoDialog.cpp
     GUI/SendSystemInfoDialog.hpp
     GUI/SendToPrinter.cpp
@@ -809,6 +811,8 @@ set(SLIC3R_GUI_SOURCES
     Utils/PresetUpdater.cpp
     Utils/PresetUpdater.hpp
     Utils/PrintHost.cpp
+    Utils/SemanticPaintClient.cpp
+    Utils/SemanticPaintClient.hpp
     Utils/PrintHost.hpp
     Utils/Process.cpp
     Utils/Process.hpp
